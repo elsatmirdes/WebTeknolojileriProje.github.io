@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+  <head style="font-family: 'Poppins', 'sans-serif';">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"  href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <style>
+      .login{
+        background-image: url("steel/image/Admin-Login.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+    </style>
+
+    <script>
+      function validateEmail() {
+        var email = document.getElementById("email").value;
+        var regex = /^\S+@\S+\.\S+$/;
+        if (regex.test(email)) {
+          return true;
+        } 
+        else {
+          alert("Lütfen geçerli bir e-posta adresi girin.");
+          return false;
+        }
+      }
+    </script>
+
+    <title>Giriş</title>
+  </head>
+
+  <!-- Ana Sayfa Hakkımızda, Şehrim, Mirasımız linki, İlgili Alanlarım, Login, İletişim -->
+  <body>
+    <nav class="navbar1">  
+
+      <h2>Web Teknolojileri</h2>
+
+      <a href="ana_sayfa.html">Anasayfa</a>
+      <a href="sehrim.html">Şehrim</a>
+      <a href="ilgi-alanlarim.html">İlgi Alanlarım</a>
+      <a href="iletisim.html">İletişim</a>
+      <a href="login.html" style="color: red;">Log In</a>
+      
+    </nav> 
+
+    <div class="login" style="padding-left: 440px; padding-top: 200px; padding-bottom: 100px;">
+      <h2 style="font-size: 90px;">Giriş Sayfası</h2>
+      <br><br>
+      <p class="aciklama">Giriş işlemi için devam ediniz.</p>
+    </div>
+
+    <div style="padding-top: 150px; padding-bottom: 150px;">
+      <form action="login.php" method="post" name="myForm" style="padding-left: 315px; padding: top 65px;" onsubmit="return validateForm()">
+        <label for="email" class="form-label">Kullanıcı Adı</label><br>
+        <input type="email" id="email" class="form-input" name="email" placeholder="E-posta adresinizi girin" ><br>
+        
+        <label for="password" class="form-label">Kullanıcı Şifresi</label><br>
+        <input type="password" id="password" class="form-input" name="password" placeholder="Şifrenizi giriniz."><br>
+        
+        <input type="submit" class="form-input" onclick="validateEmail()" value="Giriş Yap" formaction="login.php">
+      </form>
+
+    </div>
+
+  </body>
+</html>
