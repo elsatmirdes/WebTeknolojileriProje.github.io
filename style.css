@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.giris-sayfasi{
+    background-image: url("steel/image/Bursa-Tophane-1-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar1{
+    height: 8vh;
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;   
+    transition: 0.8s; 
+}
+
+.aB{
+    text-decoration: none;
+    color: whitesmoke;   
+    transition: 0.8s; 
+}
+
+h2{
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+a:hover{
+    color: brown;
+}
+
+.aB:hover{
+    color: brown;
+}
+
+h2:hover{
+    color: brown;
+}
+
+.aciklama{
+    animation: typing 3s steps(16) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+.my-button {
+    cursor: pointer;
+    background-color: #1107d0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+button{
+    cursor: pointer;
+    background-color: #1107d0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+  
+.form-input {
+display: block;
+width: 75%;
+padding: 10px;
+border: 1px solid rgb(0, 0, 0);
+border-radius: 5px;
+font-size: 16px;
+margin-bottom: 20px;
+}
+
+.form-input:focus {
+outline: none;
+border-color: #4CAF50;
+box-shadow: 0 0 10px #4CAF50;
+}
+
+textarea{
+    width: 700px;
+    height: 250px;
+}
+
+.hakkimda{
+
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 50px;
+    padding-top: 150px;
+    padding-left: 100px;
+}
+
+.hakkimda-detay{
+    font-family: system-ui;
+    font-size: 27px;
+    padding-top: 25px;
+    padding-bottom: 75px;
+    padding-left: 100px;
+    
+}
+
+.video{
+    padding-left:100px;
+    padding-top: 25px;
+}
+
+footer{
+    padding-top: 150px;
+    height: 50px;
+    background-color: gray;
+}
+
+.c-item{
+    height: 550px;
+}
+
+.c-img{
+    height: 550px;
+}
